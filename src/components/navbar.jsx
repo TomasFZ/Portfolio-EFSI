@@ -1,8 +1,11 @@
-function Navbar() {
+function Navbar({imagen}) {
     return (
     <header>
-      <nav class="navBar">
-        <h1>Tomás FZ</h1>
+      <nav className="navbar">
+        <div className="logo">
+          <img alt="img" src={imagen.name}></img>
+          Tomas FZ
+        </div>
         <ul>
             <li><a href="default.asp">Acerca de mí</a></li>
             <li><a href="news.asp">Conocimientos</a></li>
