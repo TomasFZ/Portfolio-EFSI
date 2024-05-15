@@ -7,16 +7,15 @@ function Navbar({imagen}) {
           Tomas FZ
         </div>
         <ul>
-            <li><a href="default.asp">Acerca de mí</a></li>
+            <li><a href="#acerca de mi">Acerca de mí</a></li>
             <li><a href="#conocimientos">Conocimientos</a></li>
-            <li><a href="contact.asp">Experiencia</a></li>
-            <li><a href="about.asp">Educación</a></li>
-            <li><a href="about.asp">Certificaciones</a></li>
-            <li><a href="about.asp">Contacto</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#educacion">Educación</a></li>
+            <li><a href="#certificaciones">Certificaciones</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
     </header>
-       
     );
   }
   
