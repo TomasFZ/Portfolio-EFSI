@@ -36,9 +36,13 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #EBEBD3; /* Cambiar al color de fondo deseado */
-  padding: 30px 40px; /* Ajustar el padding según sea necesario */
+  background-color: #EBEBD3;
+  padding: 30px 40px;
+  position: fixed;
+  top: 0;
+  width: 100%; /* Añade esta línea */
 }
+
 
 .navbar .logo {
   font-size: 25px;
@@ -60,10 +64,6 @@ body{
 
 .navbar ul li {
   margin-right: 50px; /* Ajustar el margen derecho según sea necesario */
-}
-
-.navbar ul li:last-child {
-  margin-right: 0;
 }
 
 .navbar ul li a {

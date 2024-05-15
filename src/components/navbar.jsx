@@ -8,7 +8,7 @@ function Navbar({imagen}) {
         </div>
         <ul>
             <li><a href="default.asp">Acerca de mí</a></li>
-            <li><a href="news.asp">Conocimientos</a></li>
+            <li><a href="#conocimientos">Conocimientos</a></li>
             <li><a href="contact.asp">Experiencia</a></li>
             <li><a href="about.asp">Educación</a></li>
             <li><a href="about.asp">Certificaciones</a></li>

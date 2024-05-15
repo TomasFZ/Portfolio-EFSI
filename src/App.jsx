@@ -3,6 +3,8 @@ import './App.css';
 import Navbar from "./components/navbar.jsx";
 import imagen from "./vendor/imagen1.png";
 import imagen2 from "./vendor/imagen2.png";
+import imagen5 from "./vendor/dibujosh2.png";
+import imagen6 from "./vendor/eee.png";
 import imagen3 from "./vendor/seBusca.png";
 import imagen4 from "./vendor/placeHolder.png";
 //import imagen from "./vendor/imagen.png"
@@ -25,7 +27,7 @@ function App() {
 
 
     <img alt="img" className="img2" src={imagen2}/>
-    <Titulo name="Conocimientos" className="titulo"/>
+    <Titulo id="conocimientos" name="Conocimientos" className="titulo"/>
     {/* <img alt="img" src={imagen2}/> */}
     {/* <img alt="img" src={imagen3}/> */}
     {/* <img alt="img" src={imagen4}/> */}
