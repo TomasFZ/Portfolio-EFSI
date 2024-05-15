@@ -10,7 +10,8 @@
 
 /* App.css */
 body{
-  background-color: #19171A
+  background-color: #050714
+
 }
 
 .seBusca{
@@ -21,7 +22,7 @@ body{
   width: 15%
 }
 .header{
-  padding-bottom: 200px;
+  padding-bottom: 0px;
 }
 
 .placeHolder{
@@ -39,18 +40,13 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #EBEBD3;
-  padding: 30px 40px;
+  background-color: #d7d7c3;
+  padding: 20px 40px;
   position: fixed;
   top: 0;
   width: 100%; /* Añade esta línea */
-}
-
-.nombreIndex{
-  position: absolute;
-  color: #EBEBD3;
-  font-size: 50px;
-  text-align: center;
+  z-index: 1000;
+  
 }
 
 .navbar .logo {
@@ -72,7 +68,7 @@ body{
 }
 
 .navbar ul li {
-  margin-right: 50px; /* Ajustar el margen derecho según sea necesario */
+  margin-right: 55px; /* Ajustar el margen derecho según sea necesario */
 }
 
 .navbar ul li a {
@@ -84,7 +80,7 @@ body{
 }
 
 .navbar ul li a:hover {
-  color: #411282; /* Cambiar al color de fondo deseado en hover */
+  color: #b45d38; /* Cambiar al color de fondo deseado en hover */
 }
 
 .img2{
@@ -101,13 +97,28 @@ body{
   font-size: 25px;
   padding-left: 70px;
   padding-right: 70px;
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+
+.conocimientosComp{
+  display: flex;
+}
+
+.conocimientosCompIndividual{
+  color:  #EBEBD3;
+  font-family: "Trebuchet MS";
+  font-size: 25px;
+  /* padding-left: 70px;
+  padding-right: 70px;
   padding-bottom: 100px;
-  padding-top: 50px;
+  padding-top: 50px; */
+  
 }
 
 .titulo{
-  padding: 10px;
-  padding-top: 200px;
+  
+  padding-top: 80px;
   font-size: 40px;
   color:  #b45d38;
   font-family: Helvetica;
@@ -115,17 +126,31 @@ body{
 }
 .container {
   position: relative;
-  text-align: center;
-  color: white;
 }
 
-.imgFondo{
-  display: flex; 
-  object-fit: fill; 
-  vertical-align: text-top; 
+.imgFondo {
   width: 100%;
-  height: 700px;
+  height: 720px; /* Ajusta la altura según sea necesario */ 
 }
+
+.nombreIndex {
+  position: absolute;
+  top: 85%;
+  left: 17%;
+  transform: translate(-50%, -50%);
+  color: #b45d38;
+  font-size: 50px;
+}
+
+.descripcion{
+  position: absolute;
+  top: 83%;
+  left: 33%;
+  font-family: Helvetica;
+  color: #EBEBD3;
+  font-size: 26px;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
