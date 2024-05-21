@@ -16,6 +16,7 @@ import Conocimientos from "./components/conocimientos.jsx";
 import Texto from "./components/texto.jsx";
 import MiniInfo from "./components/miniInfo.jsx";
 import ExperienciaCard from "./components/experiencia.jsx";
+import ContactCard from './components/contacto.jsx';
 // https://platzi.com/blog/react-css/
 
 function extractInfo(text) {
@@ -72,13 +73,32 @@ function App() {
         imagen="url_de_la_imagen"
         texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi."
       />
-      {/* Puedes repetir esto para agregar más experiencias laborales */}
     </div>
 
-
       <Titulo name="Educación" className="titulo" id="educacion" />
+
+      <div className="card-group">
+      <ExperienciaCard
+        titulo="Escuela San Cirano"
+        texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi."
+      />
+      <ExperienciaCard
+        titulo="Secundaria ORT Almagro"
+        texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi."
+      />
+    </div>
+      
       <Titulo name="Certificaciones" className="titulo" id="certificados" />
+
+
+
       <Titulo name="Contacto" className="titulo" id="contacto" />
+      <div className="card-group">
+        <ContactCard />
+      </div>
+
+
+
     </div>
   );
 }

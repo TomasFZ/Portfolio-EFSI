@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #19171A;
+  background-color: #19171A
 }
 
 .App-logo {
@@ -10,7 +10,7 @@
 
 /* App.css */
 body{
-  background-color: #050714
+  background-color: #19171A
 
 }
 
@@ -41,10 +41,10 @@ body{
   justify-content: space-between;
   align-items: center;
   background-color: #d7d7c3;
-  padding: 20px 40px;
+  padding: 15px 30px;
   position: fixed;
   top: 0;
-  width: 100%; /* Añade esta línea */
+  width: 100%; 
   z-index: 1000;
   
 }
@@ -137,7 +137,7 @@ body{
 
 .titulo{
   
-  padding-top: 80px;
+  padding-top: 90px;
   font-size: 40px;
   color:  #b45d38;
   font-family: Helvetica;

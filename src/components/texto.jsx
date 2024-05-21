@@ -1,6 +1,6 @@
 function Texto(texto) {
     return (
-        <p className={texto.className}>{texto.name}</p>
+        <p className={texto.className}>{texto.name} </p>
     );
 }
 
