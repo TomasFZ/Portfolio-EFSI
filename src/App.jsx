@@ -11,12 +11,14 @@ import imagen7 from "./vendor/fotoPrueba.jpg";
 import imagen8 from "./vendor/m.jpg";
 import imagen9 from "./vendor/ojoDePez.jpg";
 import imagen10 from "./vendor/ojoDePez2.jpg";
+import imagen11 from "./vendor/comillas.png";
 import Titulo from "./components/titulo.jsx";
 import Conocimientos from "./components/conocimientos.jsx";
 import Texto from "./components/texto.jsx";
 import MiniInfo from "./components/miniInfo.jsx";
 import ExperienciaCard from "./components/experiencia.jsx";
 import ContactCard from './components/contacto.jsx';
+import Recomendacion from './components/Recomendacion.jsx';
 // https://platzi.com/blog/react-css/
 
 function extractInfo(text) {
@@ -61,7 +63,7 @@ function App() {
       </div>
 
       <Titulo name="Experiencia" className="titulo" id="experiencia" />
-
+      <div class="container">
       <div className="card-group">
       <ExperienciaCard
         titulo="Desarrollador Web"
@@ -73,6 +75,25 @@ function App() {
         imagen="url_de_la_imagen"
         texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi."
       />
+
+      <ExperienciaCard
+        titulo="Presidente de Brawl Stars"
+        imagen="url_de_la_imagen"
+        texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi."
+      />
+
+<ExperienciaCard
+        titulo="Presidente de Brawl Stars"
+        imagen="url_de_la_imagen"
+        texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi."
+      />
+    </div>
+    </div>
+
+    <Titulo name="Recomendaciones" className="titulo"/>
+
+    <div className ="cardRecomendaciones">
+      <Recomendacion img={imagen11} className="comillas" texto={{ className: "recomendacion", id: "1", name: "Es super pro en Brawl." }}/>
     </div>
 
       <Titulo name="Educación" className="titulo" id="educacion" />
