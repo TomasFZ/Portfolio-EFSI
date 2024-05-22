@@ -11,7 +11,6 @@ function Navbar({imagen}) {
             <li><a href="#conocimientos">Conocimientos</a></li>
             <li><a href="#experiencia">Experiencia</a></li>
             <li><a href="#educacion">Educación</a></li>
-            <li><a href="#certificaciones">Certificaciones</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>

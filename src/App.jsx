@@ -56,18 +56,26 @@ function App() {
       {/* <img alt="img" className="img2" src={imagen2}/> */}
       <Titulo id="conocimientos" name="Conocimientos" className="titulo" />
       <div className="conocimientosComp">
-        <Conocimientos img={imagen3} texto={{ className: "conocimientosCompIndividual", id: "dibujo", name: "Dibujo" }} />
-        <Conocimientos img={imagen3} texto={{ className: "conocimientosCompIndividual", id: "desarrollo mvc", name: "Desarrollo MVC" }} />
-        <Conocimientos img={imagen3} texto={{ className: "conocimientosCompIndividual", id: "desarrollo web", name: "Desarrollo Web" }} />
-        <Conocimientos img={imagen3} texto={{ className: "conocimientosCompIndividual", id: "base de datos", name: "Base de Datos" }} />
-      </div>
+  <div className="conocimiento">
+    <Conocimientos img={imagen3} texto={{ className: "conocimientosCompIndividual", id: "dibujo", name: "Dibujo" }} />
+  </div>
+  <div className="conocimiento">
+    <Conocimientos img={imagen3} texto={{ className: "conocimientosCompIndividual", id: "desarrollo mvc", name: "Desarrollo MVC" }} />
+  </div>
+  <div className="conocimiento">
+    <Conocimientos img={imagen3} texto={{ className: "conocimientosCompIndividual", id: "desarrollo web", name: "Desarrollo Web" }} />
+  </div>
+  <div className="conocimiento">
+    <Conocimientos img={imagen3} texto={{ className: "conocimientosCompIndividual", id: "base de datos", name: "Base de Datos" }} />
+  </div>
+</div>
 
       <Titulo name="Experiencia" className="titulo" id="experiencia" />
       <div class="container">
       <div className="card-group">
       <ExperienciaCard
         titulo="Desarrollador Web"
-        imagen="url_de_la_imagen"
+        img={imagen3}
         texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi."
       />
       <ExperienciaCard
@@ -109,7 +117,6 @@ function App() {
       />
     </div>
       
-      <Titulo name="Certificaciones" className="titulo" id="certificados" />
 
 
 

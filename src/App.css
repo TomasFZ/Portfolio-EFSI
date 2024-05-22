@@ -10,7 +10,7 @@
 
 /* App.css */
 body{
-  background-color: #19171A
+  background-color: #1f1d21
 
 }
 
@@ -120,20 +120,33 @@ body{
   
 }
 
-.conocimientosComp{
+/* CSS */
+.conocimientosComp {
   display: flex;
+  justify-content: center;
 }
 
-.conocimientosCompIndividual{
-  color:  #EBEBD3;
+.conocimiento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px; /* Ajusta el margen entre cada conjunto de imagen y título */
+}
+
+.conocimientosCompIndividual {
+  color: #EBEBD3;
   font-family: "Trebuchet MS";
   font-size: 25px;
-  /* padding-left: 70px;
-  padding-right: 70px;
-  padding-bottom: 100px;
-  padding-top: 50px; */
-  
+  padding-top: 20px;
+  text-align: center;
 }
+
+.imgConocimientos {
+  width: 60%
+
+}
+
+
 
 .titulo{
   
@@ -217,16 +230,6 @@ body{
   padding-left: 20px;
 }
 
-.container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: radial-gradient(circle, black 10%, transparent 10%);
-  background-size: 30px 30px;
-}
 
 
 
@@ -237,12 +240,16 @@ body{
   display: flex;
   flex-wrap: wrap;
   gap: 20px; /* Espacio entre tarjetas */
+  justify-content: center;
 }
 
 .card {
-  flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
+  flex: 1 1 35%; /* Ajusta el 35% para asegurar que haya espacio para el gap */
+  max-width: 35%; /* Asegura que no se expandan más allá del 35% */
+  box-sizing: border-box; /* Incluye padding y border en el ancho */
   border: 1px solid #ddd;
   border-radius: 5px;
+  background-color: #d7d7c3;
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -255,10 +262,11 @@ body{
 
 .card-body {
   padding: 20px;
+  text-align: left; /* Alinea el texto a la izquierda */
 }
 
 .card-title {
-  color:  #EBEBD3;
+  color: #19171A;
   font-family: "Trebuchet MS";
   font-size: 25px;
 }
@@ -266,6 +274,10 @@ body{
 .card-text {
   font-size: 1rem;
   line-height: 1.5;
-  color:  #EBEBD3;
+  color: #19171A;
   font-family: "Trebuchet MS";
 }
+
+
+/*CONTACTO*/
+
