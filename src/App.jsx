@@ -37,7 +37,6 @@ function App() {
         <div className="nombreIndex">
           <h1>Tomás FZ</h1>
         </div>
-        {/* <h1 className="descripcion">Aspirante a muchas cosas</h1> */}
       </div>
 
       <img alt="img" className="seBusca" src={imagen3} />
@@ -91,18 +90,32 @@ function App() {
       />
 
 <ExperienciaCard
-        titulo="Presidente de Brawl Stars"
+        titulo="Co-fundador de Hangover"
         imagen="url_de_la_imagen"
         texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi."
       />
     </div>
     </div>
 
-    <Titulo name="Recomendaciones" className="titulo"/>
+ 
 
-    <div className ="cardRecomendaciones">
-      <Recomendacion img={imagen11} className="comillas" texto={{ className: "recomendacion", id: "1", name: "Es super pro en Brawl." }}/>
-    </div>
+    
+    <Titulo name="Recomendaciones" className="titulo" />
+
+    <div className="cardRecomendaciones">
+        <div className="recomendacion-container">
+          <Recomendacion img={imagen11} className="comillas" texto={{ className: "recomendacion", id: "1", name: "Es un gran alumno que se merece no tener que rendir ningún examen para ninguna materia. " }} />
+        </div>
+        <div className="recomendacion-container">
+          <Recomendacion img={imagen11} className="comillas" texto={{ className: "recomendacion", id: "2", name: "Coincido con lo que dijo el de la izquierda. " }} />
+        </div>
+        <div className="recomendacion-container">
+          <Recomendacion img={imagen11} className="comillas" texto={{ className: "recomendacion", id: "3", name: "Tomás fue muy didáctico y transmitió los contenidos de la cursada de una manera que se me hizo muy fácil de entender. Siempre estuvo a disposición para despejar dudas y fue realmente de ayuda en la resolución de los distintos ejercicios." }} />
+        </div>
+        <div className="recomendacion-container">
+          <Recomendacion img={imagen11} className="comillas" texto={{ className: "recomendacion", id: "4", name: "Muchas veces me compartió los resumenes que hizo para las pruebas de Historia sin pedir nada a cambio." }} />
+        </div>
+      </div>
 
       <Titulo name="Educación" className="titulo" id="educacion" />
 
@@ -113,6 +126,10 @@ function App() {
       />
       <ExperienciaCard
         titulo="Secundaria ORT Almagro"
+        texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi."
+      />
+      <ExperienciaCard
+        titulo="California Institute of Arts"
         texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi."
       />
     </div>

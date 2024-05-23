@@ -149,8 +149,7 @@ body{
 
 
 .titulo{
-  
-  padding-top: 90px;
+  padding-top: 40px;
   font-size: 40px;
   color:  #b45d38;
   font-family: Helvetica;
@@ -214,21 +213,46 @@ body{
   }
 }
 
-.cardRecomendaciones{
+.cardRecomendaciones {
   display: flex;
-  padding-left: 10%
+  max-width: 65%;
+  flex-wrap: wrap;
+  gap: 20px; /* Espacio entre tarjetas */
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px; /* Añade espacio alrededor si es necesario */
 }
 
-.comillas{
-  width: 50px;
+.recomendacion-container {
+  flex: 0 1 calc(50% - 20px); /* Para que haya 2 tarjetas por fila con un espacio de 20px entre ellas */
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start; /* Alinea el contenido al inicio (parte superior) */
+  margin-bottom: 20px; /* Añade espacio debajo de cada fila */
+  position: relative;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, );
 }
 
-.recomendacion{
-  color:  #EBEBD3;
+.comillas {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.recomendacion {
+  color: #EBEBD3;
   font-family: "Trebuchet MS";
   font-size: 20px;
-  padding-left: 20px;
+  padding-left: 50px; /* Espacio para las comillas */
+  padding-top: 10px;
+  text-align: justify;
 }
+
+
 
 
 
@@ -251,7 +275,6 @@ body{
   border-radius: 5px;
   background-color: #d7d7c3;
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .card-img-top {
@@ -279,5 +302,5 @@ body{
 }
 
 
-/*CONTACTO*/
+
 
