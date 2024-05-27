@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from "./components/navbar.jsx";
 import imagen from "./vendor/imagen1.png";
 import imagen2 from "./vendor/imagen2.png";
-import imagen5 from "./vendor/dibujosh2.png";
+import imagen5 from "./vendor/dibujosh2edit.png";
 import imagen6 from "./vendor/eee.png";
 import imagen3 from "./vendor/seBusca.png";
 import imagen4 from "./vendor/placeHolder.png";
@@ -16,6 +16,7 @@ import imagen12 from "./vendor/postgres.png";
 import imagen13 from "./vendor/mvc.png";
 import imagen14 from "./vendor/html5.png";
 import imagen15 from "./vendor/Pablines.png";
+import imagen16 from "./vendor/tipitoFeliz.png";
 import Titulo from "./components/titulo.jsx";
 import Conocimientos from "./components/conocimientos.jsx";
 import Texto from "./components/texto.jsx";
@@ -45,7 +46,7 @@ function App() {
       </div>
 
       <img alt="img" className="seBusca" src={imagen10} />
-      {/* <img alt="img" className= "placeHolder" src={imagen4}/> */}
+      <img alt="img" className= "placeHolder" src={imagen4}/>
       <Titulo name="Sobre mí" className="titulo" id="acerca de mi" /> {/* No sirve de nada el id aca */}
 
       <Texto name="Hola, soy Tomás. Me gusta mucho dibujar, programar y jugar el popular videojuego móvil Brawl Stars. Vivo en Argentina y voy al colegio ORT en Almagro. Las últimas vacaciones las pasé bien. No me gusta hacer tarea ni el café, pero sí me gusta descansar y leer cómics. Esta oración sólo está con el propósito de rellenar el texto y que no esté tan vacío. Cumplo el 29 de Julio y mis personajes ficticio favoritos son: 1. Rick Grimes, 2. Ben 10, 3. Spider-Man. 4. Man (aslume). Mi juguete más preciado es el Beyblade Galaxy Pegasus de Hasbro de la línea Metal Masters, junto con una figura de Lloyd Garmadon de Lego Ninjago. " className="parrafo" />
@@ -84,7 +85,7 @@ function App() {
       />
       <ExperienciaCard
         titulo="Diseñador Gráfico"
-        imagen={imagen4}
+        imagen={imagen5}
         texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi."
       />
 
@@ -144,7 +145,7 @@ function App() {
         <ContactCard />
       </div>
 
-
+      <img alt="img" className="imgFondo2" src={imagen16} />
 
     </div>
   );
