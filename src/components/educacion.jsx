@@ -1,9 +1,8 @@
 import React from 'react';
 
-function ExperienciaCard(props) {
+function Educacion(props) {
   return (
     <div className="card">
-      {<img src={props.imagen} className="card-img-top" alt="imagen" />}
       <div className="card-body">
         <h5 className="card-title">{props.titulo}</h5>
         <p className="card-text">{props.texto}</p>
@@ -12,4 +11,4 @@ function ExperienciaCard(props) {
   );
 }
 
-export default ExperienciaCard;
+export default Educacion;
